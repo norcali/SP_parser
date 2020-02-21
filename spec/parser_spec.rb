@@ -28,13 +28,13 @@ RSpec.describe Parser do
     before { parser.run }
 
     it 'should create the json file' do
-      expect(File).to exist("#{PATH}/spec/fixtures/test.log.json")
+      expect(File).to exist("#{PATH}/json/test.log.json")
     end
 
     before { parser.parse_for_humans }
 
     it 'should create the json file' do
-      expect(File).to exist("#{PATH}/for_humans.json")
+      expect(File).to exist("#{PATH}/json/test_for_humans.json")
     end
   end
 
@@ -61,13 +61,13 @@ RSpec.describe Parser do
     before { parser.run }
 
     it 'should create the json file' do
-      expect(File).to exist("#{PATH}/spec/fixtures/test.log.json")
+      expect(File).to exist("#{PATH}/json/flawed_test.log.json")
     end
 
     before { parser.parse_for_humans }
 
     it 'should create the json file' do
-      expect(File).to exist("#{PATH}/for_humans.json")
+      expect(File).to exist("#{PATH}/json/flawed_test_for_humans.json")
     end
   end
 end
