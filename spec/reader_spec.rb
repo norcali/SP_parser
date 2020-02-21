@@ -26,7 +26,7 @@ RSpec.describe Reader do
     before { reader.load }
 
     it 'ignores empty spaces' do
-      expect(reader.log_data.values.flatten.count).to eq 14
+      expect(reader.log_data.values.flatten.count).to eq 13
     end
   end
 

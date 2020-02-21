@@ -8,6 +8,7 @@ class Reader
     @log_data = Hash.new { |hash, key| hash[key] = [] }
   end
 
+
   def load
     build_log_data
   rescue Errno::ENOENT
@@ -16,6 +17,7 @@ class Reader
 
   private
 
+  # Grabs .log file and processes it into a Hash with url as key & [ips] as values
   def build_log_data
     File.readlines(@log_path).each do |line|
       next if line.chomp.empty?
