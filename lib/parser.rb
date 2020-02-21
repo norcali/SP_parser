@@ -18,15 +18,18 @@ class Parser
   # Returns a JSON file with both unique and most visits to each url, sorted by most.
   # Made for easy read by humans
   def parse_for_humans
-    File.open("#{PATH}/for_humans.json", 'w') do |file|
+    # Cleanup of file_path, keeping only the name of the file
+    filename = @file_path.split('/').last[0..-5]
+    File.open("#{PATH}/json/#{filename}_for_humans.json", 'w') do |file|
       file.puts JSON.pretty_generate({ most_visits: visitors.to_h, most_unique_visits: unique_visitors.to_h })
     end
   end
 
   # Returns a JSON file with both unique and most visits to each url, sorted by most
   def run
-    filename = @file_path.split('.')[-2..-1].join('.')
-    File.open("#{PATH}/#{filename}.json", 'w') do |file|
+    # Cleanup of file_path, keeping only the name of the file
+    filename = @file_path.split('/').last
+    File.open("#{PATH}/json/#{filename}.json", 'w') do |file|
       file.puts JSON.pretty_generate({ most_visits: visitors, most_unique_visits: unique_visitors })
     end
   end
@@ -51,5 +54,5 @@ if log_file_path
   log.run
   log.parse_for_humans
 else
-  puts 'USAGE: ruby parser.rb PATH_TO_LOG_FILE'
+  puts 'USAGE: ruby lib/parser.rb PATH_TO_LOG_FILE'
 end

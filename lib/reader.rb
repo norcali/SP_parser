@@ -8,7 +8,6 @@ class Reader
     @log_data = Hash.new { |hash, key| hash[key] = [] }
   end
 
-
   def load
     build_log_data
   rescue Errno::ENOENT
