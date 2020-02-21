@@ -1,0 +1,45 @@
+AllCops:
+  TargetRubyVersion: 2.4
+
+Bundler/OrderedGems:
+  Enabled: false
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/Encoding:
+  Enabled: false
+
+Style/FormatString:
+  Enabled: true
+
+Style/HashEachMethods:
+  Enabled: false
+
+Style/HashTransformKeys:
+  Enabled: false
+
+Style/HashTransformValues:
+  Enabled: false
+
+Style/InlineComment:
+  Enabled: false
+
+Layout/LineLength:
+  Max: 110
+
+Metrics/MethodLength:
+  Max: 20
+
+Style/StringLiterals:
+  EnforcedStyle: single_quotes
+
+Layout/DotPosition:
+  EnforcedStyle: leading
+
+Naming/MethodParameterName:
+  MinNameLength: 4
+
