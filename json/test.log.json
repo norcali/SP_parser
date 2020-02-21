@@ -1,0 +1,54 @@
+{
+  "most_visits": [
+    [
+      "/home",
+      "5 visits"
+    ],
+    [
+      "/index",
+      "4 visits"
+    ],
+    [
+      "/about/2",
+      "3 visits"
+    ],
+    [
+      "/help_page/1",
+      "2 visits"
+    ],
+    [
+      "/about",
+      "2 visits"
+    ],
+    [
+      "/contact",
+      "1 visits"
+    ]
+  ],
+  "most_unique_visits": [
+    [
+      "/home",
+      "4 unique views"
+    ],
+    [
+      "/index",
+      "3 unique views"
+    ],
+    [
+      "/help_page/1",
+      "2 unique views"
+    ],
+    [
+      "/about",
+      "2 unique views"
+    ],
+    [
+      "/about/2",
+      "2 unique views"
+    ],
+    [
+      "/contact",
+      "1 unique views"
+    ]
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "most_visits": {
+    "/home": "5 visits",
+    "/index": "3 visits",
+    "/about/2": "3 visits",
+    "/contact": "1 visits",
+    "/about": "1 visits"
+  },
+  "most_unique_visits": {
+    "/home": "4 unique views",
+    "/index": "2 unique views",
+    "/about/2": "2 unique views",
+    "/contact": "1 unique views",
+    "/about": "1 unique views"
+  }
+}
